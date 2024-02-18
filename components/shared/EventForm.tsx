@@ -27,6 +27,8 @@ import "react-datepicker/dist/react-datepicker.css";
 import { useRouter } from "next/navigation";
 import { createEvent, updateEvent } from "@/lib/actions/event.actions";
 import { IEvent } from "@/lib/database/models/event.model";
+import moment from "moment-timezone";
+moment().tz("America/Toronto").format();
 
 type EventFormProps = {
   userId: string;
